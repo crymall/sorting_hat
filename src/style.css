@@ -1,0 +1,40 @@
+/*---------- Content style  ----------*/
+
+h2 {
+  padding: 1.2rem;
+}
+
+li,
+input,
+button {
+  font-size: 1.2rem;
+}
+
+/*---------- List style ----------*/
+li {
+  list-style-type: none;
+}
+
+li:hover {
+  color: darkblue;
+  background-color: lightblue;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+button {
+  font-family: serif;
+  margin: 5px;
+  margin-left: 25px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: white;
+  color: darkblue;
+}
