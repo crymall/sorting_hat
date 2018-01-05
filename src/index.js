@@ -58,14 +58,14 @@ class PairApp extends React.Component {
     
     if (pairs.length === 0) {
       return (
-        <div>
+        <div className="wholeThing">
           <h2> Today's Pairs </h2>
           <button onClick={this.createPairs}> Generate Pairs </button>
         </div>
       );
     } else {
       return (
-        <div>
+        <div className="wholeThing">
           <h2> Today's Pairs </h2>
           <button onClick={this.createPairs}> Generate Pairs </button>
           

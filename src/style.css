@@ -1,12 +1,44 @@
 /*---------- Content style  ----------*/
 
+body {
+  display: flex;
+  min-height: 700px;
+  justify-content: center;
+  background-color: #5b00a5;
+  animation-name: example;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  background-image: url("https://www.graphicsfuel.com/wp-content/uploads/2012/11/magic-wand-icon-512.png");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: right bottom;
+}
+
+@keyframes example {
+    0%   {background-color:#5b00a5;}
+    33%  {background-color:#000ead;}
+    66%  {background-color:#5b00a5;}
+    100%  {background-color:#000ead;}
+}
+
+.wholeThing {
+  width: 500px;
+  padding: 30px;
+  margin-top: 30px;
+  background-color: lavender;
+  -webkit-box-shadow: 10px 10px 32px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow: 10px 10px 32px 3px rgba(0,0,0,0.3);
+  box-shadow: 10px 10px 32px 3px rgba(0,0,0,0.3);
+}
+
 h2 {
-  padding: 1.2rem;
+  font-family: 'Bungee Inline', cursive;
 }
 
 li,
 input,
 button {
+  font-family: 'Alegreya Sans', sans-serif;
   font-size: 1.2rem;
 }
 
@@ -21,13 +53,13 @@ li:hover {
 }
 
 ul {
-  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 button {
-  font-family: serif;
   margin: 5px;
-  margin-left: 25px;
 }
 
 button:focus {
