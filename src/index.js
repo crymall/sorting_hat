@@ -29,7 +29,7 @@ class PairApp extends React.Component {
       "Thomas Kenney", "Lucy Lao", "Guzal Latypova",
       "Kyla Massey", "Ivan Mendoza", "Le'Shanda Miller",
       "Steve Ramirez", "James Roberts", "Omari Rose",
-      "Tasliym Twinamaani", "Fabio Ulerio", "Krystal Willock"
+      "Tasliym Twinamaani", "Krystal Willock"
     ]
 
     this.state = {
