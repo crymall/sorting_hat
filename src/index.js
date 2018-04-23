@@ -13,40 +13,40 @@ function shuffle(a) {
 class PairApp extends React.Component {
   constructor() {
     super();
-    
+
     this.groupOne = [
-      "Aiden Shih", "Alejandro Franco", "Carlo Valenti", 
-      "David Shin", "Eion Contaste", "Elon Jefferson", 
-      "Eric Liu", "Gerson Castillo", "Helen Cho", 
-      "Joyce Ajagbe", "Luiza Maciejak", "Michelle Shang", 
-      "Simon Gaviria", "Ryan Omoruyi", "Ben Profit", 
-      "Umed Ibrohimov", "Xavier Munroe"
+      "Sheriff Ahmed", "Emin Allen", "Jonathon Alston",
+      "Rafael Li Chen", "Janette Correa", "Ashiya Dorria",
+      "Stephanie Hou", "Deborah Huang", "Rachel Jackson",
+      "Julissa Lema", "Vanessa Mack", "Eric Man",
+      "Atiba Nurse", "Chaltin Pagan", "Cesarina Paula",
+      "Asia Sewer", "Susan Tan"
     ]
-    
+
     this.groupTwo = [
-      "Sami Al Sudani", "Carolina Restrepo", "Dori Guzman", 
-      "Eddie Harmon", "Greg Davis", "Jay Farah", 
-      "Janhairis Fermin", "Jerell Davis", "Kelvin Rodriguez", 
-      "Monique Mojica", "Newton Brooks", "Nick Chavez", 
-      "Nicholas Pierre", "Princess Guerrero", "Romie Zelaya", 
-      "Sergio Toxqui", "Shaedon Blackman", "Xsumi Oliver"
+      "Kevin Anderson", "Angel Arias", "Andrew Caldwell",
+      "Michael Flor", "Crystal Grant", "Susana Han",
+      "Thomas Kenney", "Lucy Lao", "Guzal Latypova",
+      "Kyla Massey", "Ivan Mendoza", "Le'Shanda Miller",
+      "Steve Ramirez", "James Roberts", "Omari Rose",
+      "Tasliym Twinamaani", "Fabio Ulerio", "Krystal Willock"
     ]
-    
+
     this.state = {
       pairs: [],
       extra: ''
     };
   }
-  
+
   createPairs = () => {
     const oneShuffled = shuffle(this.groupOne);
     const twoShuffled = shuffle(this.groupTwo);
     let newPairs = [];
-    
+
     for (let i = 0; i < oneShuffled.length; i++) {
       newPairs.push([oneShuffled[i], twoShuffled[i]])
     }
-    
+
     this.setState({
       pairs: newPairs,
       extra: twoShuffled[twoShuffled.length - 1]
@@ -55,7 +55,7 @@ class PairApp extends React.Component {
 
   render() {
     let { pairs, extra } = this.state;
-    
+
     if (pairs.length === 0) {
       return (
         <div className="wholeThing">
@@ -68,12 +68,12 @@ class PairApp extends React.Component {
         <div className="wholeThing">
           <h2> Today's Pairs </h2>
           <button onClick={this.createPairs}> Generate Pairs </button>
-          
+
           <ul>
             {
               pairs.map((pair) => {
                 let coinFlip = Math.random();
-                
+
                 if (coinFlip < 0.5) {
                   return <li> {pair[0]} & {pair[1]} </li>
                 } else {
