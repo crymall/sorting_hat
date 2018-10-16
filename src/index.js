@@ -15,21 +15,11 @@ class PairApp extends React.Component {
     super();
 
     this.groupOne = [
-      "Sheriff Ahmed", "Emin Allen", "Jonathon Alston",
-      "Rafael Li Chen", "Janette Correa", "Ashiya Dorria",
-      "Stephanie Hou", "Deborah Huang", "Rachel Jackson",
-      "Julissa Lema", "Vanessa Mack", "Eric Man",
-      "Atiba Nurse", "Chaltin Pagan", "Cesarina Paula",
-      "Asia Sewer", "Susan Tan"
+      "Abid Hussain", "Alex Park", "Andres Cabrera", "Andrew Kil", "Carina Taveras", "Channing Tyler", "Chris Anselm", "Crispina Muriel", "Rayne Annichiarico", "Deyvi Ortiz", "Diana Gaona", "Sandra Cardona", "Erick Arellano", "Jhenya Ezhova", "Isa Alvarado", "Jacky Ong", "Max Mezalon"
     ]
 
     this.groupTwo = [
-      "Kevin Anderson", "Angel Arias", "Andrew Caldwell",
-      "Michael Flor", "Crystal Grant", "Susana Han",
-      "Thomas Kenney", "Lucy Lao", "Guzal Latypova",
-      "Kyla Massey", "Ivan Mendoza", "Le'Shanda Miller",
-      "Steve Ramirez", "James Roberts", "Omari Rose",
-      "Tasliym Twinamaani", "Krystal Willock"
+      "Jon Andrade", "Jonathan Bayne", "Jonathan Erquinigo", "Jonelle Bain", "JR Rae Jang", "Kelly Liang", "Mateo Navarrete", "Michell Tejada", "Muna Sharma", "Morteza Khaki", "Nikki Loayza", "Nielene Thomas", "Rinat Tregerman", "T'Keya Stevens", "Thomas Perez", "Treagan Birbal", "Tyson Pan", "Wynter Reid"
     ]
 
     this.state = {
