@@ -15,7 +15,7 @@ class PairApp extends React.Component {
     super();
 
     this.groupOne = [
-      "Abid Hussain", "Alex Park", "Andres Cabrera", "Andrew Kil", "Carina Taveras", "Channing Tyler", "Chris Anselm", "Crispina Muriel", "Rayne Annichiarico", "Deyvi Ortiz", "Diana Gaona", "Sandra Cardona", "Erick Arellano", "Jhenya Ezhova", "Isa Alvarado", "Jacky Ong", "Max Mezalon"
+      "Abid Hussain", "Alex Park", "Andres Cabrera", "Andrew Kil", "Carina Taveras", "Channing Tyler", "Chris Anselm", "Crispina Muriel", "Rayne Annichiarico", "Deyvi Ortiz", "Diana Gaona", "Sandra Cardona", "Erick Arellano", "Jhenya Ezhova", "Isa Alvarado", "Jacky Ong", "Max Mezalon", "Leo Lu"
     ]
 
     this.groupTwo = [
@@ -71,7 +71,7 @@ class PairApp extends React.Component {
                 }
               })
             }
-            <li> Extra: {extra} </li>
+            {/* <li> Extra: {extra} </li> */}
           </ul>
         </div>
       )
