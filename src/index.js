@@ -28,6 +28,13 @@ class PairApp extends React.Component {
     };
   }
 
+  shuffleSplit = () => {
+    const wholeClass = this.groupOne.concat(this.groupTwo);
+    const wholeClassShuffle = shuffle(wholeClass);
+    this.groupOne = wholeClassShuffle.slice(0, Math.floor(wholeClassShuffle.length / 2))
+    this.groupTwo = wholeClassShuffle.slice(Math.floor(wholeClassShuffle.length / 2))
+  }
+
   createPairs = () => {
     const oneShuffled = shuffle(this.groupOne);
     const twoShuffled = shuffle(this.groupTwo);
@@ -51,6 +58,7 @@ class PairApp extends React.Component {
         <div className="wholeThing">
           <h2> Today's Pairs </h2>
           <button onClick={this.createPairs}> Generate Pairs </button>
+          <button onClick={this.shuffleSplit}> Shuffle Split Class </button>
         </div>
       );
     } else {
@@ -58,6 +66,7 @@ class PairApp extends React.Component {
         <div className="wholeThing">
           <h2> Today's Pairs </h2>
           <button onClick={this.createPairs}> Generate Pairs </button>
+          <button onClick={this.shuffleSplit}> Shuffle Split Class </button>
 
           <ul>
             {
